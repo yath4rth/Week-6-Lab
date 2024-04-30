@@ -1,0 +1,84 @@
+#include <stdio.h>
+
+int main()
+
+{
+    
+    char suit, rank;
+    
+	printf("Suit (d/h/s/c):\n");
+	scanf(" %c", &suit);
+	printf("Rank (A/2/3/4/5/6/7/8/9/T/J/Q/K):\n");
+	scanf(" %c", &rank);
+	
+	if (suit != 'd' && suit != 'h' && suit != 's' && suit != 'c')
+	{
+	    printf("Invalid Suit");
+	    return 0;
+	}
+	
+	switch (rank)
+	{
+	    case 'A':
+	    printf("Ace of ");
+	    break;
+	    case '2':
+	    printf("Two of ");
+	    break;
+	    case '3':
+	    printf("Three of ");
+	    break;
+	    case '4':
+	    printf("Four of ");
+	    break;
+	    case '5':
+	    printf("Five of ");
+	    break;
+	    case '6':
+	    printf("Six of ");
+	    break;
+	    case '7':
+	    printf("Seven of ");
+	    break;
+	    case '8':
+	    printf("Eight of ");
+	    break;
+	    case '9':
+	    printf("Nine of ");
+	    break;
+	    case 'T':
+	    printf("Ten of ");
+	    break;
+	    case 'J':
+	    printf("Jack of ");
+	    break;
+	    case 'Q':
+	    printf("Queen of ");
+	    break;
+	    case 'K':
+	    printf("King of ");
+	    break;
+	    default:
+	    printf("Invalid Rank");
+	    return 0;
+	}
+	
+	switch (suit)
+	{
+	    case 'd':
+	    printf("Diamonds");
+	    break;
+	    case 'h':
+	    printf("Heart");
+	    break;
+	    case 's':
+	    printf("Spades");
+	    break;
+	    case 'c':
+	    printf("Clubs");
+	    break;
+	}
+	
+	return 0;
+
+}
