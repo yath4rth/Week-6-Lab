@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int numOfElements, array[500];
+    
+	printf("Enter the required number of elements (Max 500):\n\n");
+	scanf("%d", &numOfElements);
+	
+	if (numOfElements<0 || numOfElements>500)
+	{
+	    printf("Invalid\n");
+	    return 1;
+	}
+	
+	printf("Now enter the %d elements of the array...\n\n", numOfElements);
+	
+	for(int index=0; index<numOfElements; index++)
+	{
+	    printf("Set [%d] to: \n", index);
+	    scanf("%d", &array[index]);
+	}
+	
+	printf("\nThe elements in the array are:\n\n{ ");
+	
+	for(int index=0; index<numOfElements; index++)
+	{
+	    printf("%d", array[index]);
+	    if (index<numOfElements-1)
+	    {
+	        printf(", ");
+	    }
+	}
+	
+	printf(" }");
+	
+	return 0;
+
+}
