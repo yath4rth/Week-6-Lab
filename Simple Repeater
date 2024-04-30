@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+
+{
+    
+    char sym;
+    int count;
+    
+	printf("ASCII Symbol?\n");
+	scanf(" %c", &sym);
+	printf("Repeat Count?\n");
+	scanf("%d", &count);
+	
+	for (int i=1; i<=count; i++)
+	{
+	    printf("%c ", sym);
+	}
+	
+	return 0;
+
+}
