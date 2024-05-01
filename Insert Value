@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int noe, i, elmnt[100];
+    
+    printf("Input total number of elements required:\n");
+    scanf("%d", &noe);
+    
+    for (int i=0; i<noe; i++)
+    {
+        printf("Input element [%d]:\n", i);
+        scanf ("%d", &elmnt[i]);
+    }
+	
+	printf("\nBefore insertion:\n");
+	
+	for (i=0; i<noe; i++)
+    {
+        printf("Element [%d] is %d\n", i, elmnt[i]);
+        
+    }
+    
+    printf("\nInput a new value to insert:\n");
+    scanf("%d", &elmnt[noe]);
+    
+    
+    
+    int p;
+    printf("Input where to insert the value %d:\n", elmnt[noe]);
+    scanf("%d", &p);
+    
+    noe++;
+    
+    for (int j=noe; j>p; j--)
+    {
+        elmnt[j] =elmnt[j-1];
+    }
+    
+    elmnt[p] = elmnt[noe];
+    
+    
+    
+    printf("After insertion:\n");
+	
+	for (i=0; i<noe; i++)
+    {
+        printf("Element [%d] is %d\n", i, elmnt[i]);
+        scanf ("%d", &elmnt[i]);
+        
+    }
+	
+	
+	return 0;
+
+}
