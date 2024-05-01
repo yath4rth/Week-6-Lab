@@ -26,8 +26,6 @@ int main()
     printf("\nInput a new value to insert:\n");
     scanf("%d", &elmnt[noe]);
     
-    
-    
     int p;
     printf("Input where to insert the value %d:\n", elmnt[noe]);
     scanf("%d", &p);
@@ -41,8 +39,6 @@ int main()
     
     elmnt[p] = elmnt[noe];
     
-    
-    
     printf("After insertion:\n");
 	
 	for (i=0; i<noe; i++)
@@ -51,7 +47,6 @@ int main()
         scanf ("%d", &elmnt[i]);
         
     }
-	
 	
 	return 0;
 
