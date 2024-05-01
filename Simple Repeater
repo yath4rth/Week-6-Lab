@@ -12,7 +12,7 @@ int main()
 	printf("Repeat Count?\n");
 	scanf("%d", &count);
 	
-	for (int i=1; i<=count; i++)
+	for (int i=1; i<count; i++)
 	{
 	    printf("%c ", sym);
 	}
