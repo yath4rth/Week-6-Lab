@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int sum = 0, count = 0;
+    int number;
+
+    // Start a loop to input numbers
+    while (1) {
+        // Prompt the user for a number
+        printf("Number (-1 to stop)?\n");
+        scanf("%d", &number);
+
+        // Check if the input is -1
+        if (number == -1) {
+            // Check if count is 0
+            if (count == 0) {
+                printf("No numbers input.\n");
+                break; // Terminate the program
+            } else {
+                break; // Exit the loop
+            }
+        }
+
+        // Add the number to sum and increment count
+        sum += number;
+        count++;
+    }
+
+    // Check if count is 1
+    if (count == 1) {
+        printf("\nThe average of the 1 number input is %d\n", sum / count);
+    } else {
+        printf("\nThe average of the %d numbers input is %d\n", count, sum / count);
+    }
+
+    return 0;
+}
