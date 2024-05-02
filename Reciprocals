@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+	int n;
+	float r;
+	
+	printf("?\n");
+	scanf("%d", &n);
+	
+	if(n<0)
+	{
+	    printf("Input a whole number");
+	    return 0;
+	}
+	
+	for(int i=1; i<=n; i++)
+	{
+	    r = 1.0/i;
+	    printf("1 / %d is %f\n", i, r);
+	}
+	
+	return 0;
+
+}
